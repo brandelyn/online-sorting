@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class onlineSorting {
 
@@ -18,17 +19,23 @@ public class onlineSorting {
 		int studentTrait = 4;
 		boolean isMuggleBorn = false;
 
-		if (studentTrait == daring || studentTrait == brave) {
-			System.out.println("You belong in gryffindor");
+		for (int i = 0; i < 300; i++) {
+			
+			Scanner  sc = new Scanner(System.in);
 
-		} else if ((studentTrait == cunning || studentTrait == shrewd) && !isMuggleBorn) {
-			System.out.println("You belong in slytherin");
-		} else if (studentTrait == clever || studentTrait == witty) {
-			System.out.println("You belong in ravenclaw");
-		} else {
-			System.out.println("You belong in hufflepuff");
+			if (studentTrait == daring || studentTrait == brave) {
+				System.out.println("You belong in gryffindor");
+
+			} else if ((studentTrait == cunning || studentTrait == shrewd) && !isMuggleBorn) {
+				System.out.println("You belong in slytherin");
+			} else if (studentTrait == clever || studentTrait == witty) {
+				System.out.println("You belong in ravenclaw");
+			} else {
+				System.out.println("You belong in hufflepuff");
+
+			}
+
 		}
 
 	}
-
 }
